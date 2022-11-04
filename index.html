@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="musica.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eeed2d1143.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/jpg" href="logo.svg"  sizes="32x32">
+  <script src="musical.js"></script>
+  <title>Musica</title>
+</head>
+<body onload=myFunction()>
+  <header>
+      <div>
+        <button onclick="showDashboard()" class="btn-menu">
+         <img src="images/menu.svg">
+        </button>
+          <span>
+             <img src="images/logo.svg">
+          </span>
+        </div>
+      <div class="search-container">
+        <img src="images/search.svg" class="search" onclick="ShowInput()">
+          <input type="search" placeholder="search artist" class="input">
+      </div>
+  </header>
+
+     <div class="hamburger">
+       <div>
+        <button onclick="HideDashboard()">
+          <img src="images/cancel.svg" class="btn-hide">
+        </button>
+       </div>
+      <ul class="ul1">
+       <li onclick="firstPage()">
+         <img src="images/nav-home.svg">
+         <span class="icon-text">Home</span>
+       </li>
+       <li onclick="secondPage()">
+         <img src="images/nav-playlist.svg">
+         <span class="icon-text">Collection</span>
+       </li>
+       <li>
+         <img src="images/nav-radio.svg">
+         <span class="icon-text">Radio</span>
+       </li>
+       <li>
+         <img src="images/nav-video.svg">
+         <span class="icon-text">Music video</span>
+       </li>
+      </ul>
+       <ul class="ul2">
+         <li>
+           <img src="images/nav-profile.svg">
+           <span class="icon-text">Profile</span>
+         </li>
+         <li>
+           <img src="images/nav-logout.svg">
+           <span class="icon-text">Logout</span>
+         </li>
+        </ul>
+       </div>
+       <div class="first-page">
+       <div class="flex">
+        <div class="hero">
+           <div>
+            <p class="currated">
+              Currated Playlist
+              </p>
+            <h1 class="rb">R & B Hits</h1>
+            <p class="rb">All mine, lie again, petty call me everyday, out of time, no love, bad habit and so much more
+            </p>
+            <div class="frame">
+             <img src="images/Frame 4.png" class="frame-img">
+             <p class="fa fa-heart">
+              33K Likes</p>
+            </div>
+           </div>
+            <img src="images/ericesma.png" class="hero-img">
+        </div>
+        <div class="top-chart">
+         <h3 class="top">Top charts</h3>
+         <div class="container">
+           <div class="card">
+            <div class="inner-flex">
+              <div >
+              <img src="images/topchart2.jpg" class="container-img">  
+              </div>
+              <div>
+               <p class="name p1">
+                 kriz Daniel Buga</p>
+               <p class="title p2">Buga</p>
+               <p class="duration p2">3: 0: 2</p>
+             </div>
+             </div>
+             <div class="fav"><img src="images/fav.svg" class="fav-img"></div>
+            </div>
+           <div class="card">
+               <div class="inner-flex">
+              <div >
+              <img src="images/topchart1.jpg" class="container-img">  
+              </div>
+              <div>
+               <p class="name p1">
+                 kriz Daniel Buga</p>
+               <p class="title p2">Buga</p>
+               <p class="duration p2">3: 0: 2</p>
+             </div>
+             </div>
+            <div class="fav"><img src="images/fav.svg" class="fav-img"></div>
+          </div>
+          <div class="card">
+             <div class="inner-flex">
+              <div >
+              <img src="images/topchart3.jpeg" class="container-img">  
+              </div>
+              <div>
+               <p class="name p1">
+                 kriz Daniel Buga</p>
+               <p class="title p2">Buga</p>
+               <p class="duration p2">3: 0: 2</p>
+             </div>
+             </div>
+              <div class="fav"><img src="images/fav.svg" class="fav-img"></div>
+             </div>
+           </div>  
+         </div>
+       </div>
+        <h4>New Release</h4>
+       <div class="container2">
+      
+      </div>
+       <h4>Popular In your Area</h4>
+       <div class="container2">
+      </div>
+       </div>
+       <div class="collection second-page flex">
+         <button 
+         class="collection-btn">
+           My Collection
+           </button>
+         <button class="collection-btn2">Likes</button>
+         <div class="col">
+           
+       </div>
+       </div>
+       <div class="topChart flex">
+         
+       </div>
+       <footer>
+         <div class="footer-div">
+           <audio class="footerAudio" src="audio1.mp3"></audio>
+           <img src="image12.jpg" class="footer-img1">
+           <div>
+             <p class="footer-note">The way to Jannah<br>Maher zain</p>           
+           </div>
+           <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playAudioTrack()">
+        <i class="fa fa-play-circle fa-3x"></i>
+      </div>
+       <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>  
+   <div class="slider_container">
+      <div class="current-time hidden">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()" color="red">
+      <div class="total-duration hidden">00:00</div>
+    </div>
+         </div>
+       </footer>
+       
+       
