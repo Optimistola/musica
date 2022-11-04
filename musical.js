@@ -290,7 +290,6 @@ const images=[
        let audio=document.querySelector(".audio"); 
          document.querySelectorAll(".songs-card").forEach(item=>{
            item.addEventListener("click", function(e){
-             alert(item.id);
  
              let playpause_btn=document.querySelector(".playpause-track");
              console.log(item.innerHTML)
