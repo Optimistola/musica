@@ -29,6 +29,7 @@ position:fixed;
   padding:10px;
   z-index:3;
   border-top: 1px solid #555;
+  font-size:13px;
 }
 @media(max-width:760px){
   header{
